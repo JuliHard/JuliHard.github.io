@@ -1,0 +1,10 @@
+/ Making a new blog post
+
+{
+  id: 'post-4',
+  month: 'Jul', day: '10', year: '2025',
+  title: 'Your Post Title',
+  tags: ['Tag One', 'Tag Two'],
+  excerpt: 'One sentence teaser.',
+  body: `<p>Your post content here...</p>`
+}
