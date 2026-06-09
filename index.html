@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
+  <script src="publications.js"></script>
+  
   <style>
     /* ── Tokens ─────────────────────────────────────── */
     :root {
@@ -491,8 +492,7 @@
         gap: 0.75rem 1.25rem;
         padding: 1.1rem 1.25rem;
       }
-      .s- { width: 52px; height: 52px; font-size: 1rem; margin-bottom: 0; }
-      .s-title, .g-rule { display: none; }
+      .s-photo { width: 52px; height: 52px; font-size: 1rem; margin-bottom: 0; }      .s-title, .g-rule { display: none; }
       .s-nav {
         display: flex; flex-wrap: wrap;
         gap: 0.1rem 0.25rem;
@@ -576,53 +576,26 @@
     </div>
 
     <footer class="site-footer">
-      <p>© 2025 Julianna J. Harden · [University] · <a href="mailto:jjh374@cornell.edu">jjh374@cornell.edu</a></p>
+      <p>© 2026 Julianna J. Harden · [University] · <a href="mailto:jjh374@cornell.edu">jjh374@cornell.edu</a></p>
     </footer>
   </div>
 
   <!-- ── PUBLICATIONS ───────────────────────── -->
   <div class="page" id="page-publications">
-    <div class="eyebrow">Peer-reviewed</div>
-    <h1 class="page-title">Publications</h1>
-    <div class="g-rule-lg"></div>
+  <div class="eyebrow">Peer-reviewed</div>
+  <h1 class="page-title">Publications</h1>
+  <div class="g-rule-lg"></div>
 
-    <ul class="pub-list">
-      <li class="pub-item">
-        <div class="pub-title">Your Article Title Goes Here</div>
-        <div class="pub-meta">Julianna J. Harden and Co-Author Name</div>
-        <div class="pub-venue">Journal Name, Vol. X(X), pp. XX–XX. Year.</div>
-        <div class="pub-links">
-          <a class="tag" href="#">Paper</a>
-          <a class="tag" href="#">Appendix</a>
-          <a class="tag" href="#">Replication data</a>
-          <span class="tag tag-gold">Published</span>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-title">Second Article Title Goes Here</div>
-        <div class="pub-meta">Julianna J. Harden</div>
-        <div class="pub-venue">Journal Name, Vol. X(X), pp. XX–XX. Year.</div>
-        <div class="pub-links">
-          <a class="tag" href="#">Paper</a>
-          <a class="tag" href="#">Data</a>
-          <span class="tag tag-gold">Published</span>
-        </div>
-      </li>
-      <li class="pub-item">
-        <div class="pub-title">Third Article Title Goes Here</div>
-        <div class="pub-meta">Julianna J. Harden, Co-Author A, and Co-Author B</div>
-        <div class="pub-venue">Journal Name, Vol. X(X), pp. XX–XX. Year.</div>
-        <div class="pub-links">
-          <a class="tag" href="#">Paper</a>
-          <span class="tag tag-sage">Forthcoming</span>
-        </div>
-      </li>
-    </ul>
-
-    <footer class="site-footer">
-      <p>© 2025 Julianna J. Harden</p>
-    </footer>
+  <div id="pub-loading" style="color:var(--muted);font-family:'Inter',sans-serif;font-size:0.85rem;padding:1rem 0;">
+    Loading publications…
   </div>
+  <div id="pub-error" style="display:none;color:#b45309;font-family:'Inter',sans-serif;font-size:0.85rem;padding:1rem 0;"></div>
+  <ul class="pub-list" id="pub-list" style="display:none;"></ul>
+
+  <footer class="site-footer">
+    <p>© 2026 Julianna J. Harden · <a href="https://scholar.google.com/citations?user=WgGlcoYAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+  </footer>
+</div>
 
   <!-- ── RESEARCH ───────────────────────────── -->
   <div class="page" id="page-research">
@@ -660,7 +633,7 @@
     </div>
 
     <footer class="site-footer">
-      <p>© 2025 Julianna J. Harden</p>
+      <p>© 2026 Julianna J. Harden</p>
     </footer>
   </div>
 
@@ -701,7 +674,7 @@
     </div>
 
     <footer class="site-footer">
-      <p>© 2025 Julianna J. Harden</p>
+      <p>© 2026 Julianna J. Harden</p>
     </footer>
   </div>
 
@@ -720,7 +693,7 @@
       </ul>
 
       <footer class="site-footer">
-        <p>© 2025 Julianna J. Harden</p>
+        <p>© 2026 Julianna J. Harden</p>
       </footer>
     </div>
 
@@ -732,7 +705,7 @@
       <div class="g-rule-lg"></div>
       <div class="post-body" id="post-body"></div>
       <footer class="site-footer" style="margin-top:3rem;">
-        <p>© 2025 Julianna J. Harden</p>
+        <p>© 2026 Julianna J. Harden</p>
       </footer>
     </div>
   </div>
@@ -814,7 +787,7 @@
     </div>
 
     <footer class="site-footer">
-      <p>© 2025 Julianna J. Harden</p>
+      <p>© 2026 Julianna J. Harden</p>
     </footer>
   </div>
 
@@ -827,7 +800,7 @@
     <a href="cv.pdf" class="btn btn-gold" target="_blank">Download CV (PDF)</a>
 
     <footer class="site-footer" style="margin-top:3rem;">
-      <p>© 2025 Julianna J. Harden</p>
+      <p>© 2026 Julianna J. Harden</p>
     </footer>
   </div>
 
@@ -837,6 +810,43 @@
      JAVASCRIPT — SPA ROUTER + BLOG DATA
 ════════════════════════════════════ -->
 <script>
+
+  function renderPublications() {
+  const loading = document.getElementById('pub-loading');
+  const error   = document.getElementById('pub-error');
+  const list    = document.getElementById('pub-list');
+
+  if (typeof PUBLICATIONS === 'undefined') {
+    loading.style.display = 'none';
+    error.style.display   = 'block';
+    error.innerHTML = `<strong>publications.js not found.</strong><br>
+      Run <code>fetch_publications.py</code> to generate it, then commit
+      <code>publications.js</code> to your repo alongside <code>index.html</code>.<br><br>
+      Until then, <a href="https://scholar.google.com/citations?user=WgGlcoYAAAAJ&hl=en" target="_blank">
+      view publications on Google Scholar →</a>`;
+    return;
+  }
+
+  loading.style.display = 'none';
+  list.style.display    = 'block';
+
+  list.innerHTML = PUBLICATIONS.map(pub => {
+    const citedBadge = (pub.cited && pub.cited !== '0')
+      ? `<span class="tag">${pub.cited} citations</span>` : '';
+    const yearBadge = pub.year
+      ? `<span class="tag tag-gold">${pub.year}</span>` : '';
+    const link = pub.url
+      ? `<a class="tag tag-sage" href="${pub.url}" target="_blank">Scholar ↗</a>` : '';
+    return `
+      <li class="pub-item">
+        <div class="pub-title">${pub.title}</div>
+        <div class="pub-meta">${pub.authors}</div>
+        <div class="pub-venue">${pub.venue}</div>
+        <div class="pub-links">${yearBadge}${citedBadge}${link}</div>
+      </li>`;
+  }).join('');
+}
+  
 // ── Blog posts data ──────────────────────────────────────────
 // Add your own posts here. Each post has: id, date, title, tags, excerpt, body (HTML).
 const POSTS = [
@@ -844,7 +854,7 @@ const POSTS = [
     id: 'post-1',
     month: 'Jun',
     day: '03',
-    year: '2025',
+    year: '2026',
     title: 'On Getting Started with Computational Methods',
     tags: ['Methods', 'Grad School'],
     excerpt: 'A reflection on the learning curve of computational social science and resources that helped me get started.',
@@ -861,7 +871,7 @@ const POSTS = [
     id: 'post-2',
     month: 'Mar',
     day: '18',
-    year: '2025',
+    year: '2026',
     title: 'Notes from a Conference I Almost Didn\'t Attend',
     tags: ['Academic Life'],
     excerpt: 'Reflections on the unexpected value of going even when you feel like you have nothing ready to show.',
@@ -878,7 +888,7 @@ const POSTS = [
     id: 'post-3',
     month: 'Jan',
     day: '07',
-    year: '2025',
+    year: '2026',
     title: 'What I\'m Reading This Semester',
     tags: ['Reading', 'Dissertation'],
     excerpt: 'A running list of books and articles on my desk as I work through the second chapter of my dissertation.',
@@ -954,6 +964,7 @@ function navigate(pageId, pushState = true) {
   if (link) link.classList.add('active');
 
   if (pushState) history.pushState({ page: pageId }, '', '#' + pageId);
+  if (pageId === 'publications') renderPublications();
 
   // Reset blog view when navigating to blog
   if (pageId === 'blog') {
